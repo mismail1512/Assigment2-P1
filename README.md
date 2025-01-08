@@ -1,17 +1,9 @@
-Here’s a detailed example of a README file for your assignment. This assumes that your project is based on controlling a robot using ROS 2, Gazebo, and custom Python scripts for movement. Feel free to adapt it further if necessary.
-
----
 
 # Robot Control using ROS 2 and Gazebo
 
 ## Overview
 
 This project demonstrates how to simulate and control a robot in ROS 2 (Humble) using Gazebo for simulation and Python for controlling the robot's movement. The robot's velocity is controlled using a publisher, and its position is tracked via Odometry data. The robot is a simple differential drive robot with a wheel drive controller plugin in Gazebo.
-
-## Requirements
-
-
-  
 
 
 ## Project Structure
@@ -129,11 +121,5 @@ The launch file that starts the simulation in Gazebo, including:
 - Launching RViz for visualization.
 - Starting Gazebo with the specified world.
 
-### `robot4.xacro`
-
-The robot model in URDF format, which is generated using Xacro. It includes:
-- A differential drive configuration with two wheels.
-- A Gazebo plugin to handle the wheel drive controller and odometry.
-- A camera sensor and related Gazebo plugin for visualization.
 
 
