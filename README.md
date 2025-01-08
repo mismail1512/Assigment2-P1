@@ -1,4 +1,3 @@
-Sure! Here's a detailed README file that explains what we have done, how to run the program, and covers all the use cases:
 
 ---
 
