@@ -32,7 +32,7 @@ Ensure you have the following installed:
    
    ```bash
    cd ~/catkin_ws/src
-   git clone <your-repository-url>
+   git clone <our repo>
    cd ..
    catkin_make
    source devel/setup.bash
