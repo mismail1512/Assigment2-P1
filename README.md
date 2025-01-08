@@ -30,34 +30,9 @@ robot_urdf/
 
 ## Setup Instructions
 
-### 1. Clone the Repository
 
-Clone the repository into your ROS 2 workspace (`~/ws/src` or another location):
 
-```bash
-cd ~/ws/src
-git clone <repository_url>
-```
-
-### 2. Install Dependencies
-
-Run the following command to install all dependencies for the package:
-
-```bash
-cd ~/ws
-rosdep install --from-paths src --ignore-src -r -y
-```
-
-### 3. Build the Package
-
-Build the workspace using `colcon`:
-
-```bash
-cd ~/ws
-colcon build --symlink-install
-```
-
-### 4. Source the Workspace
+### 1. Source the Workspace
 
 Source the workspace after building:
 
@@ -65,7 +40,7 @@ Source the workspace after building:
 source ~/ws/install/setup.bash
 ```
 
-### 5. Launch Gazebo
+### 2. Launch Gazebo
 
 To launch the Gazebo simulation and load the robot model, run the following command:
 
@@ -78,7 +53,7 @@ This command will:
 - Start the `robot_state_publisher` and `joint_state_publisher` nodes.
 - Open RViz with the default configuration (loaded from `rviz.rviz`).
 
-### 6. Move the Robot
+### 3. Move the Robot
 
 In a new terminal, run the `robot_mover.py` node to move the robot by publishing velocity commands:
 
@@ -91,7 +66,7 @@ This script will:
 - Track and log the robot's position using the `/odom` topic.
 - Publish the robot's pose and velocity information to `/robot_pose_velocity`.
 
-### 7. Echo the Robot's Pose and Velocity
+### 4. Echo the Robot's Pose and Velocity
 
 To view the robot's pose and velocity, use the `ros2 topic echo` command:
 
