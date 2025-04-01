@@ -1,4 +1,15 @@
 #!/usr/bin/env python3
+"""Service Node for Last Target Tracking
+
+Provides a service to retrieve the last target coordinates and maintains 
+the latest target position by subscribing to /last_target topic.
+
+Services:
+    get_target (assignment_2_2024/GetTarget): Returns last (x,y) target
+
+Subscribers:
+    /last_target (geometry_msgs/Point): Receives updated target positions
+"""
 
 import rospy
 from assignment_2_2024.srv import GetTarget, GetTargetResponse
@@ -8,16 +19,30 @@ from geometry_msgs.msg import Point
 last_target = {"x": 0.0, "y": 0.0}
 
 def handle_get_target(req):
+    """Service callback handler for get_target service
+    
+    Args:
+        req (GetTargetRequest): Empty request
+        
+    Returns:
+        GetTargetResponse: Contains last target x,y coordinates
+    """
     rospy.loginfo(f"Returning last target: ({last_target['x']}, {last_target['y']})")
     return GetTargetResponse(last_target["x"], last_target["y"])
 
 def target_callback(msg):
+    """Callback for /last_target subscriber
+    
+    Args:
+        msg (Point): Contains new target coordinates
+    """
     global last_target
     last_target["x"] = msg.x
     last_target["y"] = msg.y
     rospy.loginfo(f"Updated last target to: ({last_target['x']}, {last_target['y']})")
 
 def main():
+    """Initializes and runs the service node"""
     rospy.init_node('service_node')
 
     # Subscribe to /last_target
