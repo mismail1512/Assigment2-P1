@@ -1,0 +1,303 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Assigment2-P1-main’s Documentation! &mdash; robot mover 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=f2a433a1"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            robot mover
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Welcome to Assigment2-P1-main’s Documentation!</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and Tables</a></li>
+<li><a class="reference internal" href="#module-documentation">Module Documentation</a></li>
+<li><a class="reference internal" href="#module-scripts.action_client_node">Action_client Module</a><ul>
+<li><a class="reference internal" href="#scripts.action_client_node.ActionClientNode"><code class="docutils literal notranslate"><span class="pre">ActionClientNode</span></code></a><ul>
+<li><a class="reference internal" href="#scripts.action_client_node.ActionClientNode.client"><code class="docutils literal notranslate"><span class="pre">ActionClientNode.client</span></code></a></li>
+<li><a class="reference internal" href="#scripts.action_client_node.ActionClientNode.state_pub"><code class="docutils literal notranslate"><span class="pre">ActionClientNode.state_pub</span></code></a></li>
+<li><a class="reference internal" href="#scripts.action_client_node.ActionClientNode.last_target_pub"><code class="docutils literal notranslate"><span class="pre">ActionClientNode.last_target_pub</span></code></a></li>
+<li><a class="reference internal" href="#scripts.action_client_node.ActionClientNode.robot_state"><code class="docutils literal notranslate"><span class="pre">ActionClientNode.robot_state</span></code></a></li>
+<li><a class="reference internal" href="#scripts.action_client_node.ActionClientNode.cancel_goal"><code class="docutils literal notranslate"><span class="pre">ActionClientNode.cancel_goal()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.action_client_node.ActionClientNode.feedback_callback"><code class="docutils literal notranslate"><span class="pre">ActionClientNode.feedback_callback()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.action_client_node.ActionClientNode.odom_callback"><code class="docutils literal notranslate"><span class="pre">ActionClientNode.odom_callback()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.action_client_node.ActionClientNode.run"><code class="docutils literal notranslate"><span class="pre">ActionClientNode.run()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.action_client_node.ActionClientNode.send_goal"><code class="docutils literal notranslate"><span class="pre">ActionClientNode.send_goal()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-scripts.service_node">Service_node Module</a><ul>
+<li><a class="reference internal" href="#scripts.service_node.handle_get_target"><code class="docutils literal notranslate"><span class="pre">handle_get_target()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.service_node.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.service_node.target_callback"><code class="docutils literal notranslate"><span class="pre">target_callback()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">robot mover</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Welcome to Assigment2-P1-main’s Documentation!</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="welcome-to-assigment2-p1-main-s-documentation">
+<h1>Welcome to Assigment2-P1-main’s Documentation!<a class="headerlink" href="#welcome-to-assigment2-p1-main-s-documentation" title="Link to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and Tables<a class="headerlink" href="#indices-and-tables" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+<section id="module-documentation">
+<h1>Module Documentation<a class="headerlink" href="#module-documentation" title="Link to this heading"></a></h1>
+<p>Below is the detailed documentation for the modules in the <strong>Assigment2-P1-main</strong> package.</p>
+</section>
+<section id="module-scripts.action_client_node">
+<span id="action-client-module"></span><h1>Action_client Module<a class="headerlink" href="#module-scripts.action_client_node" title="Link to this heading"></a></h1>
+<p>Action Client Node for Robot Navigation</p>
+<p>Provides interface for sending navigation goals to action server and publishes:
+- Robot state (position/velocity)
+- Last target coordinates</p>
+<dl class="simple">
+<dt>Action Clients:</dt><dd><p>/reaching_goal (assignment_2_2024/PlanningAction): Navigation action server</p>
+</dd>
+<dt>Publishers:</dt><dd><p>/robot_state (assignment_2_2024/RobotState): Current robot state
+/last_target (geometry_msgs/Point): Last sent target</p>
+</dd>
+<dt>Subscribers:</dt><dd><p>/odom (nav_msgs/Odometry): For robot position/velocity data</p>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="scripts.action_client_node.ActionClientNode">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">scripts.action_client_node.</span></span><span class="sig-name descname"><span class="pre">ActionClientNode</span></span><a class="reference internal" href="_modules/scripts/action_client_node.html#ActionClientNode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.action_client_node.ActionClientNode" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Handles goal management and robot state monitoring</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="scripts.action_client_node.ActionClientNode.client">
+<span class="sig-name descname"><span class="pre">client</span></span><a class="headerlink" href="#scripts.action_client_node.ActionClientNode.client" title="Link to this definition"></a></dt>
+<dd><p>Action client instance</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>SimpleActionClient</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="scripts.action_client_node.ActionClientNode.state_pub">
+<span class="sig-name descname"><span class="pre">state_pub</span></span><a class="headerlink" href="#scripts.action_client_node.ActionClientNode.state_pub" title="Link to this definition"></a></dt>
+<dd><p>Robot state publisher</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Publisher</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="scripts.action_client_node.ActionClientNode.last_target_pub">
+<span class="sig-name descname"><span class="pre">last_target_pub</span></span><a class="headerlink" href="#scripts.action_client_node.ActionClientNode.last_target_pub" title="Link to this definition"></a></dt>
+<dd><p>Last target publisher</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Publisher</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="scripts.action_client_node.ActionClientNode.robot_state">
+<span class="sig-name descname"><span class="pre">robot_state</span></span><a class="headerlink" href="#scripts.action_client_node.ActionClientNode.robot_state" title="Link to this definition"></a></dt>
+<dd><p>Current state container</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>RobotState</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.action_client_node.ActionClientNode.cancel_goal">
+<span class="sig-name descname"><span class="pre">cancel_goal</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/action_client_node.html#ActionClientNode.cancel_goal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.action_client_node.ActionClientNode.cancel_goal" title="Link to this definition"></a></dt>
+<dd><p>Cancels current navigation goal</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.action_client_node.ActionClientNode.feedback_callback">
+<span class="sig-name descname"><span class="pre">feedback_callback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feedback</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/action_client_node.html#ActionClientNode.feedback_callback"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.action_client_node.ActionClientNode.feedback_callback" title="Link to this definition"></a></dt>
+<dd><p>Handles action feedback messages</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>feedback</strong> (<em>PlanningFeedback</em>) – Feedback from action server</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.action_client_node.ActionClientNode.odom_callback">
+<span class="sig-name descname"><span class="pre">odom_callback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/action_client_node.html#ActionClientNode.odom_callback"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.action_client_node.ActionClientNode.odom_callback" title="Link to this definition"></a></dt>
+<dd><p>Processes odometry data and publishes robot state</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>msg</strong> (<em>Odometry</em>) – Incoming odometry message</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.action_client_node.ActionClientNode.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/action_client_node.html#ActionClientNode.run"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.action_client_node.ActionClientNode.run" title="Link to this definition"></a></dt>
+<dd><p>Main node loop for user interaction</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.action_client_node.ActionClientNode.send_goal">
+<span class="sig-name descname"><span class="pre">send_goal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/action_client_node.html#ActionClientNode.send_goal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.action_client_node.ActionClientNode.send_goal" title="Link to this definition"></a></dt>
+<dd><p>Sends new navigation goal to action server</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>float</em>) – Target x coordinate</p></li>
+<li><p><strong>y</strong> (<em>float</em>) – Target y coordinate</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-scripts.service_node">
+<span id="service-node-module"></span><h1>Service_node Module<a class="headerlink" href="#module-scripts.service_node" title="Link to this heading"></a></h1>
+<p>Service Node for Last Target Tracking</p>
+<p>Provides a service to retrieve the last target coordinates and maintains
+the latest target position by subscribing to /last_target topic.</p>
+<dl class="simple">
+<dt>Services:</dt><dd><p>get_target (assignment_2_2024/GetTarget): Returns last (x,y) target</p>
+</dd>
+<dt>Subscribers:</dt><dd><p>/last_target (geometry_msgs/Point): Receives updated target positions</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.service_node.handle_get_target">
+<span class="sig-prename descclassname"><span class="pre">scripts.service_node.</span></span><span class="sig-name descname"><span class="pre">handle_get_target</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">req</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/service_node.html#handle_get_target"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.service_node.handle_get_target" title="Link to this definition"></a></dt>
+<dd><p>Service callback handler for get_target service</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>req</strong> (<em>GetTargetRequest</em>) – Empty request</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Contains last target x,y coordinates</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>GetTargetResponse</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.service_node.main">
+<span class="sig-prename descclassname"><span class="pre">scripts.service_node.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/service_node.html#main"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.service_node.main" title="Link to this definition"></a></dt>
+<dd><p>Initializes and runs the service node</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.service_node.target_callback">
+<span class="sig-prename descclassname"><span class="pre">scripts.service_node.</span></span><span class="sig-name descname"><span class="pre">target_callback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/service_node.html#target_callback"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.service_node.target_callback" title="Link to this definition"></a></dt>
+<dd><p>Callback for /last_target subscriber</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>msg</strong> (<em>Point</em>) – Contains new target coordinates</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, mohamed sayed s6655420.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
